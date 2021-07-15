@@ -18,13 +18,7 @@ class App extends Component {
             <React.Fragment>
                 <DisplayName firstName = {this.state.firstName} lastName={this.state.lastName}/>
                 <ul>
-                   <li><NameList listOfNames = {this.state.listOfNames.map((listOfNames) => {
-                       return (
-                           <React.Fragment>
-                               <li>{listOfNames}</li>
-                           </React.Fragment>
-                       )
-                   })}/></li>
+                   <li><NameList listOfNames = {this.state.listOfNames}/></li>
                 </ul>
             </React.Fragment>
                  );

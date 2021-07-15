@@ -4,7 +4,11 @@ const NameList = (props) => {
     return (
         <span>
             <ul>
-                <li>{props.listOfNames}</li>
+                <li>{props.listOfNames.map((listOfNames) =>
+                         <React.Fragment>
+                         <li>{listOfNames}</li>
+                     </React.Fragment>      
+                )}</li>
                 </ul>
         </span>
 
